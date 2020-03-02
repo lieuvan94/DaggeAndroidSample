@@ -8,11 +8,13 @@ import dagger.android.support.AndroidSupportInjectionModule
 import net.vinid.demodaggerandroid.MainApplication
 import net.vinid.demodaggerandroid.di.activitymodule.MainActivityBuilder
 import net.vinid.demodaggerandroid.di.viewmodelmodule.ViewModelModule
+import javax.inject.Singleton
 
 /**
  * Created by Nguyen Van Lieu on 2/26/2020.
  */
 
+@Singleton
 @Component(
     modules = [AppModule::class,
         ViewModelModule::class,
